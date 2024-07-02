@@ -7,7 +7,7 @@ WORKDIR $CATALINA_HOME
 RUN set -x \
  && rm -rf webapps \
  && mv webapps.dist webapps \
- && sed -i 's/<\/tomcat-users>/<user username="admin" password="admin" roles="manager-gui" \/><\/tomcat-users>/' conf/tomcat-users.xml
+ && sed -i 's/<\/tomcat-users>/<role rolename="manager-gui"\/>\n<user username="admin" password="admin" roles="manager-gui" \/>\n<\/tomcat-users>/' conf/tomcat-users.xml
 
 EXPOSE 8080
 
