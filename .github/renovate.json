@@ -3,12 +3,9 @@
   "extends": [
     "config:best-practices"
   ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["major"],
-      "dependencyDashboardApproval": true
-    }
-  ],
+  "major": {
+    "dependencyDashboardApproval": true
+  },
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
