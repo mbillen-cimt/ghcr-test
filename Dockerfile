@@ -1,4 +1,4 @@
-FROM tomcat:11-jdk25-temurin
+FROM tomcat:11.0-jdk25
 
 LABEL org.opencontainers.image.source=https://github.com/mbillen-cimt/ghcr-test
 
