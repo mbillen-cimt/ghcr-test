@@ -7,8 +7,7 @@
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "matchCurrentVersion": ">= 1.0.0",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     },
     {
       "matchUpdateTypes": ["major"],
