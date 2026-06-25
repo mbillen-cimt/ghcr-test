@@ -3,17 +3,24 @@
   "extends": [
     "config:best-practices"
   ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "matchCurrentVersion": ">= 1.0.0",
-      "automerge": true,
-      "automergeType": "pr"
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "dependencyDashboardApproval": true
-    }
-  ],
+  "patch": {
+    "automerge": true,
+    "automergeType": "pr"
+  },
+  "pin": {
+    "automerge": true,
+    "automergeType": "pr"
+  },
+  "minor": {
+    "automerge": true,
+    "automergeType": "pr"
+  },
+  "digest": {
+    "automerge": true,
+    "automergeType": "pr"
+  },
+  "major": {
+    "dependencyDashboardApproval": true
+  },
   "timezone": "Europe/Berlin"
 }
