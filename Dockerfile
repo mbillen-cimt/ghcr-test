@@ -1,4 +1,4 @@
-FROM tomcat:11.0-jdk17-temurin@sha256:8a6f2475f329f95f896f76d2b34a3ab187d3e0ec3d37d712889bba0c07cd84d3
+FROM tomcat:11.0-jdk17-temurin@sha256:70d853820f77afb833464e337784c68a96bcf089842d6973ef7902036cc43702
 
 LABEL org.opencontainers.image.source=https://github.com/mbillen-cimt/ghcr-test
 
